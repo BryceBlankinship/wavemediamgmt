@@ -7,6 +7,9 @@ body {
   background-color: #b6d3ff;
   font-family: "Poppins", sans-serif;
 }
+a {
+  color: inherit; 
+} 
 .login-form-container {
   min-height: 100vh;
   display: flex;

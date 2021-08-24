@@ -59,7 +59,7 @@ section {
 }
 .list-area {
   padding: 3rem 3rem;
-  padding-right: 0rem;
+  padding-right: 2rem;
 }
 .list-area > * + * {
   margin-top: 2rem;

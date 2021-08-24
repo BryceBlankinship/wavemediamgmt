@@ -12,121 +12,85 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/about.css">
+        
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
-            <div class="container">
+        <nav class="navigation-bar">
+            <div class="mine-container navbar-flex">
                 <a class="navbar-brand" href="/index.html">Wave Media Management</a>
+                <div class="burger-icon">
+                    <i class="bi bi-list"></i>
+                </div>
+                <a class="btn btn-primary" href="/signup.html">Sign Up</a>
+                <a class="btn btn-primary" href="/signin.html">Sign in</a>
+           
+            </div>
+            <div class="buttons-wrapper ">
                 <a class="btn btn-primary" href="/signup.html">Sign Up</a>
                 <a class="btn btn-primary" href="/signin.html">Sign in</a>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <div class="text-center text-white">
-                            <!-- Page heading-->
-                            <h1 class="mb-5">Wave Media Management</h1>
-                            <!-- Signup form-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
-                            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <!-- Email address input-->
-                                <div class="row">
-                                    <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                                    </div>
-                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                                </div>
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        <p>To activate this form, sign up at</p>
-                                        <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                    </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+      
+
+        <header>
+            <div class="mine-container">
+                <h1>About Us</h1>
+                <p>Wave Media Management</p>
             </div>
         </header>
-        <!-- Icons Grid-->
-        <section class="features-icons bg-light text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i></div>
-                            <h3>Fast Setup</h3>
-                            <p class="lead mb-0">See results in less than 2 weeks</p>
+
+
+        <section class="about-us-section">
+            <div class="mine-container">
+
+                <h1>What is Wave Media Management?</h1>
+                <p>Wave Media Management is a full service marketing solutions agency based out of Lehigh Valley, Pennsylvania. We understand the difficulty of managing your own business. Factor in the time and energy it takes to maintain a top tier social media presence, the skills necessary to market yourself, and advertise your business and the difficulty and stress starts to mount.</p>
+                <p>At Wave Media Management, it is our mission to provide affordable marketing solutions local businesses and firms. Wave Media Management does not discriminate against business size. We pride ourselves on our ability to work with businesses big and small and will guarantee success in all fields applicable.</p>
+
+                <div class="social-area">
+                    <h1>Contact us, or visit our socials</h1>
+                    <div class="boxes-area">
+                        <div class="box">
+                            <h3>Have a Question?</h3>
+                            <p>Contact us using the form below or visit our contact page</p>
+                            <button>Our Contact Page</button>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
-                            <h3>Contact 24/7</h3>
-                            <p class="lead mb-0">Our team is here for you whenever you need us</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
-                            <h3>Proven Results</h3>
-                            <p class="lead mb-0">Click <a href="/success.html">here</a> to see our previous success</p>
+                        <div class="box">
+                            <h3>Follow Us</h3>
+                            <p>We are active with our community! Follow our social medias or reach out to us to inquire about pricing!</p>
+                            <div class="icons-wrapper">
+                                <a  href="#"class="icon-wrapper">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#"class="icon-wrapper">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+          
         </section>
-        <!-- Image Showcases-->
-        <section class="showcase">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Our Process</h2>
-                        <p class="lead mb-0">We work directly with your business to advertise in consumer areas that directly correlate with your sales channels and strategies. Click <a href="/signup.html">here</a> to sign up!</p>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
-                    <div class="col-lg-6 my-auto showcase-text">
-                        <h2>Meet the Founders</h2>
-                        <p class="lead mb-0">Sean & Dylan have been doing SEO since 2021. Click <a href="founders.html">here</a> to contact the Founders directly!</p>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Pricing</h2>
-                        <p class="lead mb-0">Our pricing models vary based on your needs, and we always have our client's interest at heart. Click <a href="/pricing.html">here</a> to view our pricing matrix.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+
+
+
         
+
+
+
+
+
         <!-- Call to Action-->
         <section class="call-to-action text-white text-center" id="signup">
             <div class="container position-relative">

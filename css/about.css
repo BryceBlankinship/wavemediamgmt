@@ -1,0 +1,108 @@
+header {
+  background-color: #006ed3;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem !important;
+}
+header h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+header p {
+  font-size: 1.5rem;
+}
+section {
+  padding: 3rem 0rem;
+}
+.about-us-section > .mine-container > h1,
+.about-us-section > .mine-container .social-area h1 {
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.about-us-section > .mine-container > p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about-us-section > .mine-container .social-area {
+  padding: 3rem 0rem;
+}
+.about-us-section > .mine-container .social-area .boxes-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.about-us-section > .mine-container .social-area .boxes-area .box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.about-us-section > .mine-container .social-area .boxes-area .box h3 {
+  font-weight: 700;
+}
+.about-us-section > .mine-container .social-area .boxes-area .box p {
+  font-size: 1.2rem;
+}
+.about-us-section > .mine-container .social-area .boxes-area .box button {
+  height: 60px;
+  background-color: #006ed3;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 99px;
+  font-weight: 600;
+}
+.about-us-section
+  > .mine-container
+  .social-area
+  .boxes-area
+  .box
+  .icons-wrapper {
+  display: flex;
+  align-items: center;
+}
+.about-us-section
+  > .mine-container
+  .social-area
+  .boxes-area
+  .box
+  .icons-wrapper
+  > *
+  + * {
+  margin-left: 0.5rem;
+}
+.about-us-section
+  > .mine-container
+  .social-area
+  .boxes-area
+  .box
+  .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #006ed3;
+}
+.about-us-section
+  > .mine-container
+  .social-area
+  .boxes-area
+  .box
+  .icon-wrapper
+  i {
+  color: #fff;
+  font-size: 20px;
+}

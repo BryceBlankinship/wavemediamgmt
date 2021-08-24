@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.burger-icon,
+.buttons-wrapper {
+  display: none;
+}
+.navigation-bar {
+  padding: 1rem 0rem;
+}
+.mine-container {
+  width: 1200px;
+  margin: 0rem auto;
+}
+.navbar-flex {
+  display: flex;
+  align-items: center;
+}
+.navbar-flex > a:first-child {
+  flex: 1;
+}
+.navbar-flex > .btn:last-child {
+  margin-left: 1rem;
+}
+.header.masthead h1 {
+  font-size: 50px !important;
+}
+.wave-media-management-container {
+  background-color: #5ab7ff;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 150, 255, 0.42) 0%,
+      #0096ff 60%
+    ),
+    url(https://wavemediamgmt.com/wp-content/uploads/2021/05/pexels-photo-97080.jpeg) !important;
+  color: #fff;
+  padding: 7rem 0rem;
+  color: #fff;
+  position: relative;
+}
+.wave-media-management-container img {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 100%;
+}
+.wave-media-management-container img:nth-child(2) {
+  top: 70%;
+}
+.wave-media-management-container .mine-container {
+  position: relative;
+  z-index: 222;
+}
+.wave-media-management-container .mine-container h2,
+.services-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-size: 50px;
+}
+.wave-media-management-container .mine-container .management-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 3.5rem;
+}
+.wave-media-management-container .mine-container .management-boxes .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wave-media-management-container .mine-container .management-boxes .box i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.wave-media-management-container .mine-container .management-boxes .box h5 {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+/* services-section */
+.services-section {
+  padding: 9rem 0rem;
+}
+.services-section .mine-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-section .mine-container h2 {
+  margin-bottom: 1.5rem;
+}
+.services-section p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.services-section a {
+  background-color: #5ab7ff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  width: 200px;
+  padding: 1rem 0rem;
+  border-radius: 99px;
+  text-align: center;
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/* pricing-section */
+.pricing-section {
+  background-color: #5ab7ff;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 150, 255, 0.42) 0%,
+      #0096ff 60%
+    ),
+    url(https://wavemediamgmt.com/wp-content/uploads/2021/05/pexels-photo-97080.jpeg) !important;
+  color: #fff;
+  padding: 9rem 0rem;
+}
+.pricing-section a {
+  background-color: #fff;
+  color: #5ab7ff;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1250px) {
+  .mine-container {
+    width: 95%;
+  }
+  .wave-media-management-container .mine-container .management-boxes {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .wave-media-management-container .mine-container .management-boxes {
+    grid-template-columns: 1fr 1fr;
+  }
+  .wave-media-management-container .mine-container h2,
+  .services-section h2 {
+    font-size: 35px !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .wave-media-management-container .mine-container .management-boxes {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navigation-bar {
+    position: relative;
+  }
+  .navigation-bar .mine-container > *:last-child,
+  .navigation-bar .mine-container > *:nth-child(3) {
+    display: none;
+  }
+  .burger-icon,
+  .buttons-wrapper {
+    display: block;
+  }
+
+  .burger-icon i {
+    font-size: 30px;
+  }
+  .buttons-wrapper {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: -300%;
+    z-index: 222;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    transition: 0.4s ease all;
+  }
+  .buttons-wrapper.active {
+    top: 70px;
+  }
+  .buttons-wrapper > * {
+    width: 100%;
+  }
+  .buttons-wrapper > * + * {
+    margin-top: 0.5rem;
+  }
+  #contactForm {
+    display: none;
+  }
+  header.masthead h1 {
+    margin-bottom: 0px !important;
+  }
+  .wave-media-management-container .mine-container h2,
+  .services-section h2 {
+    font-size: 1.7rem !important;
+  }
+  .services-section p {
+    font-size: 1rem;
+  }
+}

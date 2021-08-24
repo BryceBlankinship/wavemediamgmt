@@ -5,3 +5,9 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+let BurgerIcon=document.querySelector(".burger-icon");
+
+BurgerIcon.addEventListener("click",()=>{
+    document.querySelector(".navigation-bar .buttons-wrapper").classList.toggle("active")
+})

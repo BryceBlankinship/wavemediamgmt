@@ -3,16 +3,50 @@
 <head>
   <title>Testing SQL Connection</title>
   <script src=app.js></script>
+
+
+  <!-- google poppins font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./css/signup.css">
 </head>
 
-<body>This is a test sign in
+<body>
 
-    <!--Figure out what form action does-->
-    <form action="AccountHandler" method="POST" class="form" id="loginForm">
-        <input type="text" id="username" name="user" placeholder="Username"></input>
-        <input type="text" id="password" name="pass" placeholder="Password"></input>
-        <input type="submit" onclick='sendData()'>
-    </form>
+
+  <section class="login-form-container">
+<div class="form-area">
+  <div class="left-area">
+    <h1>Wave Media Management</h1>
+    <p>Welcome Please Login</p>
+  </div>
+  <!--Figure out what the form action does-->
+<form action="AccountHandler" method="POST" class="form" id="loginForm">
+  <h3>Sign in</h3>
+  <div class="input-wrapper">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="user" placeholder="Username"></input>
+  </div>
+  <div class="input-wrapper">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="pass" placeholder="Password"></input>
+  </div>
+
+ 
+
+  <label for="sign-up" class="sign-up-label" style="margin-top: .8rem;">Sign in</label>
+  <input type="submit" id="sign-up"onclick='sendData()' style="display: none;">
+
+  <!-- already account -->
+  <p class="register-account">Dont have an account <a href="./signup.html">Sign up</a></p>
+</form>
+</div>
+
+  </section>
+
     
     
     

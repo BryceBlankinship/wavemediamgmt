@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #b6d3ff;
+  font-family: "Poppins", sans-serif;
+}
+.login-form-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form-container .form-area {
+  width: 1100px;
+  background-color: #0d6efd;
+  display: grid;
+  border-radius: 20px;
+
+  grid-template-columns: 1fr 400px;
+}
+.login-form-container .left-area {
+  padding: 2rem;
+  font-size: 2rem;
+  color: #fff;
+}
+.login-form-container .left-area h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.login-form-container .left-area p {
+  font-weight: 300;
+  font-size: 20px;
+}
+.login-form-container form {
+  background-color: #fff;
+
+  padding: 3rem 2rem;
+  min-height: 450px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-form-container form > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.login-form-container form > .input-wrapper {
+  width: 100%;
+}
+.login-form-container form .checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.login-form-container form .checkbox-wrapper a {
+  color: #0d6efd;
+}
+.login-form-container form .checkbox-wrapper p {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.login-form-container form input:not(input[type="checkbox"]) {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ddd;
+  width: 100%;
+  outline: none;
+  padding: 0rem 0.5rem;
+}
+.login-form-container form label {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 14px;
+}
+.login-form-container form .input-wrapper {
+  margin-bottom: 1rem;
+}
+.login-form-container form .sign-up-label {
+  margin-top: 1.5rem;
+  display: inline-block;
+  background-color: #0d6efd;
+
+  color: #fff;
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.login-form-container .register-account {
+  font-size: 13px;
+  margin-top: 0.6rem;
+}
+.login-form-container .register-account a {
+  color: #0d6efd;
+}

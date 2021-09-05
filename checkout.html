@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Buy cool new product</title>
+    <title>Wave Checkout</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
   </head>
   <!--<h1>Checkout</h1>-->
-  <body>
+  <!-- Navigation-->
+  <nav class="navigation-bar">
+    <div class="mine-container navbar-flex">
+        <a class="navbar-brand" href="/index.html">Wave Media Management</a>
+        <div class="burger-icon">
+            <i class="bi bi-list"></i>
+        </div>
+        <a class="btn btn-primary" href="/signup.html">Sign Up</a>
+        <a class="btn btn-primary" href="/signin.html">Sign in</a>
+   
+    </div>
+    <div class="buttons-wrapper ">
+        <a class="btn btn-primary" href="/signup.html">Sign Up</a>
+        <a class="btn btn-primary" href="/signin.html">Sign in</a>
+    </div>
+  </nav>
+
+  
+    
+  <div class="content">
+    <div class = "checkoutText">
+      Checkout
+    </div>
     <section>
       <div class="product">
         <img src="/assets/img/bailey-square.png"/>
@@ -64,5 +88,5 @@
       initPayPalButton();
     </script>
     </section>
-  </body>
+  </div>
 </html>

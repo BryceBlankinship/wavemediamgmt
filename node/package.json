@@ -1,5 +1,8 @@
 {
   "name": "node",
+  "engines": {
+    "node": ">=0.12"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,5 +16,5 @@
     "express": "^4.17.1",
     "nodemon": "^2.0.12"
   },
-  "engines": { "node": ">=0.12"}
+  
 }

@@ -5,7 +5,7 @@ app.get('/', (req, res) => {
     res.send("Welcome to the home page");
 });
 
-const port = process.env.port || 8081;
+const port = process.env.port || 8080;
 app.listen(port, () => {
     console.log("Server launch success");
 });

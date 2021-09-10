@@ -24,7 +24,7 @@
     <p>Create Your Account To Get Started</p>
   </div>
   <!--Figure out what the form action does-->
-<form action="AccountHandler" method="POST" class="form" id="loginForm">
+<form action="/users" method="POST" class="form" id="loginForm">
   <h3>Get Started</h3>
   <div class="input-wrapper">
     <label for="username">Username</label>
@@ -41,7 +41,8 @@
   </div>
 
   <label for="sign-up" class="sign-up-label">Sign up</label>
-  <input type="submit" id="sign-up"onclick='sendData()' style="display: none;">
+  <!--button tag used to be an input tag... if theres any issues-->
+  <button type="submit" id="sign-up" style="display: none;">
 
   <!-- already account -->
   <p class="register-account">Already registered? <a href="./signin.html">Sign in</a></p>

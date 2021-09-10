@@ -1,10 +1,28 @@
 const express = require('express');
+const http = require('http');
+const path = require("path");
+const bodyParser = require('body-parser');
+const helmet = require('helmet');
+const rateLimit = require("express-rate-limit");
 const app = express();
 const bcrypt = require('bcrypt');
 
-app.use(express.json())
+const server = http.createServer(app)
 
-const users = [{name:"Test"}]
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100 // limit each IP to 100 requests
+});
+
+app.use(express.json())
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname,'./public')));
+app.use(helmet());
+app.use(limiter);
+
+
+const users = []
+
 
 app.get('/', (req, res) => {
     res.send("Oops! Somehow you landed on our NodeJS server. To head back to the main site, simply press that back arrow on your browser.")
@@ -19,6 +37,7 @@ app.post('/users', async (req, res) => {
     try{
         const hashedPassword = await bcrypt.hash(req.body.password, 10)
         const user = {name: req.body.name, password: hashedPassword}
+        // add a check here to see if user already exists.
         users.push(user)
         res.status(201).send("User created successfully")
     } catch {

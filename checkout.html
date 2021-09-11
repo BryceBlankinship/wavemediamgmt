@@ -36,56 +36,17 @@
       <div class="product">
         <img src="/assets/img/bailey-square.png"/>
         <div class="description">
-          <h3>Bailey</h3>
-          <h5>$10.00</h5>
+          <h3>Select a Package</h3>
+          <h5>See Our <a href="/packages.html">Packages</a></h5>
         </div>
       </div>
       <div id="smart-button-container">
         <div style="text-align: center;">
-          <div id="paypal-button-container"></div>
+          <select id="item-options"><option value="Management Package One" price="100">Management Package One - 100 USD</option><option value="Management Package Two" price="200">Management Package Two - 200 USD</option><option value="Management Package Three" price="350">Management Package Three - 350 USD</option><option value="Management Package Four" price="400">Management Package Four - 400 USD</option><option value="Advertisement Package One" price="100">Advertisement Package One - 100 USD</option><option value="Advertisement Package Two " price="350">Advertisement Package Two - 350 USD</option><option value="Advertisement Package Three" price="600">Advertisement Package Three - 600 USD</option></select> <select style="visibility: hidden" id="quantitySelect"></select> </div> <div id="paypal-button-container"></div> </div> </div>
         </div>
       </div>
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-    <script>
-      function initPayPalButton() {
-        paypal.Buttons({
-          style: {
-            shape: 'rect',
-            color: 'silver',
-            layout: 'vertical',
-            label: 'paypal',
-            
-          },
-  
-          createOrder: function(data, actions) {
-            return actions.order.create({
-              purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
-            });
-          },
-  
-          onApprove: function(data, actions) {
-            return actions.order.capture().then(function(orderData) {
-              
-              // Full available details
-              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-  
-              // Show a success message within this page, e.g.
-              const element = document.getElementById('paypal-button-container');
-              element.innerHTML = '';
-              element.innerHTML = '<h3>Thank you for your payment!</h3>';
-  
-              // Or go to another URL:  actions.redirect('thank_you.html');
-              
-            });
-          },
-  
-          onError: function(err) {
-            console.log(err);
-          }
-        }).render('#paypal-button-container');
-      }
-      initPayPalButton();
-    </script>
+      <script src="https://www.paypal.com/sdk/js?client-id=AT2XlAVZ4hYTW-HkTy2Z3FUpykcBSCqRfi4QWU4Yy0FMqtwqlU8FRInTL0qnNEuV20hVAaVM4srxzEsl&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+      <script src="/paypal.js"></script>
     </section>
   </div>
 </html>

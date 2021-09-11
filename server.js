@@ -14,6 +14,8 @@ const limiter = rateLimit({
     max: 100 // limit each IP to 100 requests
 });
 
+app.set('view-engine', 'ejs')
+
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname,'./public')));
@@ -28,12 +30,13 @@ app.get('/', (req, res) => {
     res.send("Oops! Somehow you landed on our NodeJS server. To head back to the main site, simply press that back arrow on your browser.")
 })
 
-app.get('/users', (req, res) => {
-    res.json(users)
-    res.send("Welcome to the home page");
+app.get('/register', (req, res) => {
+    res.render('signup.ejs')
+    //res.json(users)
+    //res.send("Welcome to the home page");
 });
 
-app.post('/users', async (req, res) => {
+app.post('/register', async (req, res) => {
     try{
         const hashedPassword = await bcrypt.hash(req.body.password, 10)
         const user = {name: req.body.name, password: hashedPassword}
@@ -45,7 +48,7 @@ app.post('/users', async (req, res) => {
     }
 });
 
-app.post('/users/login', async (req, res) => {
+app.post('/login', async (req, res) => {
     const user = users.find(user => user.name === req.body.name)
     if(user == null){
         return res.status(400).send("User not found")
